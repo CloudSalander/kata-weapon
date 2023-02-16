@@ -16,5 +16,11 @@
 		public function setWeapon(Weapon $weapon) {
 			$this->weapon = $weapon;
 		}
+
+		public function useWeapon() {
+			echo $this->name." ";
+			$this->weapon->attack();
+			echo '<br>';
+		}
 	}	
 ?>
